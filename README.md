@@ -36,13 +36,14 @@ todo
 
 Usage
 -----
-
+Set icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 Default implementation:
 
 ```xml
     <com.github.zagum.switchicon.SwitchIconView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:si_image="@drawable/ic_cloud"/>
 ```
 
 Fully customized implementation:
@@ -71,7 +72,7 @@ Public methods:
   public void switchState(boolean animate);
 ```
 
-See [sample](todo) project for more information.
+See [sample](https://github.com/zagum/Android-SwitchIcon/tree/master/switchicon-sample) project for more information.
 
 TODO
 -------
