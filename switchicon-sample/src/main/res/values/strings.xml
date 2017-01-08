@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">SwitchIconView</string>
+  <string name="sync">Sync</string>
+  <string name="alarm">Alarm</string>
+</resources>

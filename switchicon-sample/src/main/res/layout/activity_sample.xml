@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+  <LinearLayout
+      android:id="@+id/button1"
+      android:orientation="vertical"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:background="?selectableItemBackgroundBorderless"
+      android:gravity="center">
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/switchIconView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:si_animation_duration="500"
+        app:si_disabled_alpha=".5"
+        app:si_image="@drawable/ic_cloud"
+        app:si_padding="8dp"
+        app:si_tint_color="#ff3c00"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sync"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/button2"
+      android:orientation="vertical"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginLeft="24dp"
+      android:background="?selectableItemBackgroundBorderless"
+      android:gravity="center">
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/switchIconView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:si_image="@drawable/ic_timer"
+        app:si_padding="8dp"
+        app:si_tint_color="#7956f9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"/>
+
+  </LinearLayout>
+
+</LinearLayout>
