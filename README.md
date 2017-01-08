@@ -30,7 +30,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-todo
+    compile 'com.github.zagum:Android-SwitchIcon:1.0.0'
 }
 ```
 
