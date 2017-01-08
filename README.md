@@ -1,6 +1,7 @@
 Android-SwitchIcon
 ================
 
+[![](https://jitpack.io/v/zagum/Android-SwitchIcon.svg)](https://jitpack.io/#zagum/Android-SwitchIcon)
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
 
 Google launcher-style implementation of switch (enable/disable) icon
