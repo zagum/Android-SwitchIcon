@@ -38,6 +38,7 @@ dependencies {
 Usage
 -----
 Set icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
+
 Default implementation:
 
 ```xml
@@ -79,6 +80,7 @@ TODO
 -------
 
 Icon scale now is not supported;
+
 Changing dash size not supported;
 
 License
