@@ -78,8 +78,8 @@ See [sample](https://github.com/zagum/Android-SwitchIcon/tree/master/switchicon-
 TODO
 -------
 
-Icon scale now is not supported
-Changing dash size not supported
+Icon scale now is not supported;
+Changing dash size not supported;
 
 License
 -------
