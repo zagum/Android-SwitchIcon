@@ -5,7 +5,7 @@ Android-SwitchIcon
 
 Google launcher-style implementation of switch (enable/disable) icon
 
-![image](todo)
+![image](https://github.com/zagum/Android-SwitchIcon/blob/master/art/sample.gif)
 
 Compatibility
 -------------
@@ -77,6 +77,7 @@ TODO
 -------
 
 Icon scale now is not supported
+Changing dash size not supported
 
 License
 -------
