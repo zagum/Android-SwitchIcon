@@ -15,8 +15,6 @@
    -->
 <resources>
   <declare-styleable name="SwitchIconView">
-    <attr name="si_image" format="reference"/>
-    <attr name="si_padding" format="dimension"/>
     <attr name="si_tint_color" format="color"/>
     <attr name="si_animation_duration" format="integer"/>
     <attr name="si_disabled_alpha" format="float"/>
