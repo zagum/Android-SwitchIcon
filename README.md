@@ -69,13 +69,6 @@ Public methods:
 
 See [sample](https://github.com/zagum/Android-SwitchIcon/tree/master/switchicon-sample) project for more information.
 
-TODO
--------
-
-Icon scale now is not supported;
-
-Changing dash size not supported;
-
 License
 -------
 
