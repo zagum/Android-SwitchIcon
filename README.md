@@ -37,6 +37,9 @@ dependencies {
 
 Usage
 -----
+
+SwitchIconView extends from ImageView so you can set icon with ```android:src``` or ```pp:srcCompat```
+
 Set any icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 
 Use ```app:si_tint_color``` to set color to your icon. Default color is black;
@@ -72,7 +75,7 @@ See [sample](https://github.com/zagum/Android-SwitchIcon/tree/master/switchicon-
 License
 -------
 
-    Copyright 2016 Evgenii Zagumennyi
+    Copyright 2017 Evgenii Zagumennyi
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
