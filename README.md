@@ -38,7 +38,7 @@ dependencies {
 Usage
 -----
 
-SwitchIconView extends from ImageView so you can set icon with ```android:src``` or ```pp:srcCompat```
+SwitchIconView extends from ImageView so you can set icon with ```android:src``` or ```app:srcCompat```
 
 Set any icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 
@@ -51,10 +51,10 @@ Fully customized implementation:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
+        android:src="@drawable/ic_cloud"
         app:si_animation_duration="500"
         app:si_disabled_alpha=".5"
-        app:si_tint_color="#ff3c00"
-        app:srcCompat="@drawable/ic_cloud"/>
+        app:si_tint_color="#ff3c00"/>
 ```
 
 Public methods: 
