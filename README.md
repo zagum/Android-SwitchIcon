@@ -37,9 +37,9 @@ dependencies {
 
 Usage
 -----
-Set icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
+Set any icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 
-Use app:si_tint_color to set color to your icon. Default color is black;
+Use ```app:si_tint_color``` to set color to your icon. Default color is black;
 
 Fully customized implementation:
 
