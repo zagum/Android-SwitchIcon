@@ -18,11 +18,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:padding="8dp"
         app:si_animation_duration="500"
         app:si_disabled_alpha=".5"
-        app:si_image="@drawable/ic_cloud"
-        app:si_padding="8dp"
-        app:si_tint_color="#ff3c00"/>
+        app:si_tint_color="#ff3c00"
+        app:srcCompat="@drawable/ic_cloud"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -46,9 +46,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:si_image="@drawable/ic_timer"
-        app:si_padding="8dp"
-        app:si_tint_color="#7956f9"/>
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:si_tint_color="#7956f9"
+        app:srcCompat="@drawable/ic_timer"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -39,14 +39,7 @@ Usage
 -----
 Set icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 
-Default implementation:
-
-```xml
-    <com.github.zagum.switchicon.SwitchIconView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:si_image="@drawable/ic_cloud"/>
-```
+Use app:si_tint_color to set color to your icon. Default color is black;
 
 Fully customized implementation:
 
@@ -54,11 +47,11 @@ Fully customized implementation:
     <com.github.zagum.switchicon.SwitchIconView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         app:si_animation_duration="500"
-        app:si_disabled_alpha=".3"
-        app:si_image="@drawable/ic_cloud"
-        app:si_padding="8dp"
-        app:si_tint_color="#ff3c00"/>
+        app:si_disabled_alpha=".5"
+        app:si_tint_color="#ff3c00"
+        app:srcCompat="@drawable/ic_cloud"/>
 ```
 
 Public methods: 
