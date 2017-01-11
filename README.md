@@ -55,7 +55,6 @@ Fully customized implementation:
         app:si_disabled_alpha=".3"
         app:si_tint_color="#ff3c00"
         app:si_enabled="false"
-        app:si_tint_color="#ff3c00"
         app:srcCompat="@drawable/ic_cloud"/>
 ```
 
