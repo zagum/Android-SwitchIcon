@@ -18,5 +18,6 @@
     <attr name="si_tint_color" format="color"/>
     <attr name="si_animation_duration" format="integer"/>
     <attr name="si_disabled_alpha" format="float"/>
+    <attr name="si_enabled" format="boolean"/>
   </declare-styleable>
 </resources>
