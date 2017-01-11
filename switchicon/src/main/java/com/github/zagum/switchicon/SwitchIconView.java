@@ -145,6 +145,14 @@ public class SwitchIconView extends AppCompatImageView {
   }
 
   /**
+   * Check state
+   * @return TRUE if icon is enabled, otherwise FALSE
+   */
+  public boolean isIconEnabled() {
+    return currentState == ENABLED;
+  }
+
+  /**
    * Switches state between values {@link #ENABLED} or {@link #DISABLED}
    * with animation
    */
