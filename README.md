@@ -31,14 +31,14 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.zagum:Android-SwitchIcon:1.1.0'
+    compile 'com.github.zagum:Android-SwitchIcon:1.2.0'
 }
 ```
 
 Usage
 -----
 
-SwitchIconView extends from ImageView so you can set icon with ```android:src``` or ```app:srcCompat```
+SwitchIconView extends from AppCompatImageView so you can set icon with  ```app:srcCompat```
 
 Set any icon (vector or image) to SwitchIconView and enjoy switchable icon in your app :)
 
@@ -51,19 +51,23 @@ Fully customized implementation:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:src="@drawable/ic_cloud"
         app:si_animation_duration="500"
-        app:si_disabled_alpha=".5"
-        app:si_tint_color="#ff3c00"/>
+        app:si_disabled_alpha=".3"
+        app:si_tint_color="#ff3c00"
+        app:si_enabled="false"
+        app:si_tint_color="#ff3c00"
+        app:srcCompat="@drawable/ic_cloud"/>
 ```
 
 Public methods: 
 
 ```java
 
-  public void setState(@State int state);
+  public void setIconEnabled(boolean enabled);
 
-  public void setState(@State int state, boolean animate);
+  public void setIconEnabled(boolean enabled, boolean animate);
+
+  public boolean isIconEnabled();
 
   public void switchState();
 
