@@ -22,6 +22,7 @@
         app:si_animation_duration="500"
         app:si_disabled_alpha=".5"
         app:si_tint_color="#ff3c00"
+        app:si_enabled="false"
         app:srcCompat="@drawable/ic_cloud"/>
 
     <TextView

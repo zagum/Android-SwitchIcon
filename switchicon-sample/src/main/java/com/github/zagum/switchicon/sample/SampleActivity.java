@@ -32,6 +32,7 @@ public class SampleActivity extends Activity {
       @Override
       public void onClick(View v) {
         switchIcon2.switchState();
+        switchIcon1.setIconEnabled(!switchIcon1.isIconEnabled());
       }
     });
   }
