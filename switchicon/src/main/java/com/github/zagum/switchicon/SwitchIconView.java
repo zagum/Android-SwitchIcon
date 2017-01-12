@@ -56,7 +56,7 @@ public class SwitchIconView extends AppCompatImageView {
   private int dashThickness;
   private int dashLengthXProjection;
   private int dashLengthYProjection;
-  private final PorterDuffColorFilter colorFilter;
+  private PorterDuffColorFilter colorFilter;
   private final ArgbEvaluator colorEvaluator = new ArgbEvaluator();
 
   @FloatRange(from = 0f, to = 1f)
@@ -279,9 +279,10 @@ public class SwitchIconView extends AppCompatImageView {
   }
 
   private void updateImageColor(int color) {
-    ReflectionUtils.setValue(colorFilter, "mColor", color);
+    colorFilter = new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN);
+    ReflectionUtils.setValue(this, "mColorFilter", colorFilter);
     Class<?> noParams[] = {};
-    ReflectionUtils.callMethod(colorFilter, "update", noParams);
+    ReflectionUtils.callMethod(this, "applyColorMod", noParams);
   }
 
   private void postInvalidateOnAnimationCompat() {
