@@ -31,7 +31,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.zagum:Android-SwitchIcon:1.3.0'
+    compile 'com.github.zagum:Android-SwitchIcon:1.3.1'
 }
 ```
 
