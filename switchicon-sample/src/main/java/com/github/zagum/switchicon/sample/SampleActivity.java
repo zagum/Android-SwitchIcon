@@ -9,8 +9,10 @@ public class SampleActivity extends Activity {
 
   private SwitchIconView switchIcon1;
   private SwitchIconView switchIcon2;
+  private SwitchIconView switchIcon3;
   private View button1;
   private View button2;
+  private View button3;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +21,10 @@ public class SampleActivity extends Activity {
 
     switchIcon1 = (SwitchIconView) findViewById(R.id.switchIconView1);
     switchIcon2 = (SwitchIconView) findViewById(R.id.switchIconView2);
+    switchIcon3 = (SwitchIconView) findViewById(R.id.switchIconView3);
     button1 = findViewById(R.id.button1);
     button2 = findViewById(R.id.button2);
+    button3 = findViewById(R.id.button3);
 
     button1.setOnClickListener(new View.OnClickListener() {
       @Override
@@ -32,7 +36,12 @@ public class SampleActivity extends Activity {
       @Override
       public void onClick(View v) {
         switchIcon2.switchState();
-        switchIcon1.setIconEnabled(!switchIcon1.isIconEnabled());
+      }
+    });
+    button3.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        switchIcon3.switchState();
       }
     });
   }
