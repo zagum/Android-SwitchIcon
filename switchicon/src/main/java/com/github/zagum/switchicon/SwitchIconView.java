@@ -266,23 +266,22 @@ public class SwitchIconView extends AppCompatImageView {
 
   private void updateAlpha(float fraction) {
     int alpha = (int) ((disabledStateAlpha + (1f - fraction) * (1f - disabledStateAlpha)) * 255);
-    updateImageAlphaWithoutInvalidate(alpha);
+    updateImageAlpha(alpha);
     dashPaint.setAlpha(alpha);
-  }
-
-  private void updateImageAlphaWithoutInvalidate(int alpha) {
-    alpha &= 0xFF;
-    ReflectionUtils.setValue(this, "mAlpha", alpha);
-    ReflectionUtils.setValue(this, "mColorMod", true);
-    Class<?> noParams[] = {};
-    ReflectionUtils.callMethod(this, "applyColorMod", noParams);
   }
 
   private void updateImageColor(int color) {
     colorFilter = new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN);
-    ReflectionUtils.setValue(this, "mColorFilter", colorFilter);
-    Class<?> noParams[] = {};
-    ReflectionUtils.callMethod(this, "applyColorMod", noParams);
+    setColorFilter(colorFilter);
+  }
+
+  @SuppressWarnings("deprecation")
+  private void updateImageAlpha(int alpha) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+      setImageAlpha(alpha);
+    } else {
+      setAlpha(alpha);
+    }
   }
 
   private void postInvalidateOnAnimationCompat() {
