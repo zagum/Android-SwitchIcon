@@ -88,7 +88,7 @@ public class SwitchIconView extends AppCompatImageView {
       animationDuration = array.getInteger(R.styleable.SwitchIconView_si_animation_duration, DEFAULT_ANIMATION_DURATION);
       disabledStateAlpha = array.getFloat(R.styleable.SwitchIconView_si_disabled_alpha, DEFAULT_DISABLED_ALPHA);
       disabledStateColor = array.getColor(R.styleable.SwitchIconView_si_disabled_color, iconTintColor);
-      enabled = array.getBoolean(R.styleable.SwitchIconView_si_disabled_alpha, true);
+      enabled = array.getBoolean(R.styleable.SwitchIconView_si_enabled, true);
       noDash = array.getBoolean(R.styleable.SwitchIconView_si_no_dash, false);
     } finally {
       array.recycle();
