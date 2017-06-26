@@ -1,21 +1,21 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile project(":switchicon")
-    compile "com.android.support:appcompat-v7:$supportLibVersion"
+  compile project(":switchicon")
+  compile "com.android.support:appcompat-v7:$supportLibVersion"
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
 
-    defaultConfig {
-        applicationId "com.github.zagum.switchicon.sample"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+  defaultConfig {
+    applicationId "com.github.zagum.switchicon.sample"
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+    versionCode 1
+    versionName "1.0"
 
-        vectorDrawables.useSupportLibrary = true
-    }
+    vectorDrawables.useSupportLibrary = true
+  }
 }
