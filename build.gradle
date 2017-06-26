@@ -1,27 +1,27 @@
 buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath 'com.android.tools.build:gradle:2.3.0'
-  }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
 }
 
 allprojects {
-  repositories {
-    jcenter()
-  }
+    repositories {
+        jcenter()
+    }
 }
 
 ext {
-  compileSdkVersion = 25
-  buildToolsVersion = '25.0.2'
-  minSdkVersion = 15
-  targetSdkVersion = compileSdkVersion
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.3'
+    minSdkVersion = 15
+    targetSdkVersion = compileSdkVersion
 
-  supportLibVersion = '25.3.0'
+    supportLibVersion = '25.3.1'
 }
 
 task clean(type: Delete) {
-  delete rootProject.buildDir
+    delete rootProject.buildDir
 }
