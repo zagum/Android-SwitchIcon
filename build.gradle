@@ -1,25 +1,36 @@
 buildscript {
   repositories {
     jcenter()
+    google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.3.3'
+    classpath 'com.android.tools.build:gradle:3.0.0'
   }
+}
+
+plugins {
+  id 'com.gradle.build-scan' version '1.10.1'
+}
+
+buildScan {
+  licenseAgreementUrl = 'https://gradle.com/terms-of-service'
+  licenseAgree = 'yes'
 }
 
 allprojects {
   repositories {
     jcenter()
+    google()
   }
 }
 
 ext {
-  compileSdkVersion = 25
-  buildToolsVersion = '25.0.3'
+  compileSdkVersion = 26
+  buildToolsVersion = '27.0.0'
   minSdkVersion = 15
   targetSdkVersion = compileSdkVersion
 
-  supportLibVersion = '25.3.1'
+  supportLibVersion = '27.0.0'
 }
 
 task clean(type: Delete) {
