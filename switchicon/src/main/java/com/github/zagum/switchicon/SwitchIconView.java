@@ -81,6 +81,8 @@ public class SwitchIconView extends AppCompatImageView {
   public SwitchIconView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
 
+    setLayerType(LAYER_TYPE_SOFTWARE, null);
+
     TypedArray array = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.SwitchIconView, 0, 0);
 
     try {
