@@ -4,7 +4,7 @@ buildscript {
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.1.0'
+    classpath 'com.android.tools.build:gradle:3.1.4'
   }
 }
 
@@ -17,11 +17,11 @@ allprojects {
 
 ext {
   compileSdkVersion = 27
-  buildToolsVersion = '27.0.0'
+  buildToolsVersion = '27.0.3'
   minSdkVersion = 15
   targetSdkVersion = compileSdkVersion
 
-  supportLibVersion = '27.1.0'
+  supportLibVersion = '27.1.1'
 }
 
 task clean(type: Delete) {

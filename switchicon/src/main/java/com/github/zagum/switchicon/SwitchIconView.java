@@ -208,7 +208,11 @@ public class SwitchIconView extends AppCompatImageView {
   protected void onDraw(Canvas canvas) {
     if (!noDash) {
       drawDash(canvas);
-      canvas.clipPath(clipPath, Region.Op.XOR);
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        canvas.clipOutPath(clipPath);
+      } else {
+        canvas.clipPath(clipPath, Region.Op.XOR);
+      }
     }
     super.onDraw(canvas);
   }

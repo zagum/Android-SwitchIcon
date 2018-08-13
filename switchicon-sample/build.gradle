@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-  compile project(":switchicon")
-  compile "com.android.support:appcompat-v7:$supportLibVersion"
+  implementation project(":switchicon")
+  implementation "com.android.support:appcompat-v7:$supportLibVersion"
 }
 
 android {
