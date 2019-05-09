@@ -1,7 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 dependencies {
   implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 android {
@@ -11,4 +14,7 @@ android {
   defaultConfig {
     minSdkVersion rootProject.ext.minSdkVersion
   }
+}
+repositories {
+    mavenCentral()
 }

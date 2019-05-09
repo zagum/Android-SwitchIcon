@@ -1,8 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 dependencies {
   implementation project(":switchicon")
   implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 android {
@@ -18,4 +21,7 @@ android {
 
     vectorDrawables.useSupportLibrary = true
   }
+}
+repositories {
+    mavenCentral()
 }
