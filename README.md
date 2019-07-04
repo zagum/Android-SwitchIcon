@@ -70,19 +70,16 @@ Fully customized implementation:
         app:srcCompat="@drawable/ic_cloud"/>
 ```
 
-Public methods: 
+Public methods and fields: 
 
-```java
+```kotlin
 
-  public void setIconEnabled(boolean enabled);
+  var isIconEnabled: Boolean
 
-  public void setIconEnabled(boolean enabled, boolean animate);
+  fun setIconEnabled(enabled: Boolean, animate: Boolean = true)
 
-  public boolean isIconEnabled();
-
-  public void switchState();
-
-  public void switchState(boolean animate);
+  fun switchState(animate: Boolean = true)
+  
 ```
 
 See [sample](https://github.com/zagum/Android-SwitchIcon/tree/master/switchicon-sample) project for more information.
