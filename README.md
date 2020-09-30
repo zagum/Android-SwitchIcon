@@ -11,7 +11,7 @@ Google launcher-style implementation of switch (enable/disable) icon
 Compatibility
 -------------
 
-This library is compatible from API 15 (Android 4.0.3).
+This library is compatible from API 15 (Android 4.0.3 = Ice Cream Sandwich (name)).
 
 Download
 --------
