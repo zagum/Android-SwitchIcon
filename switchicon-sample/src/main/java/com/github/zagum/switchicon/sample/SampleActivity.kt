@@ -2,14 +2,22 @@ package com.github.zagum.switchicon.sample
 
 import android.app.Activity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_sample.*
+import com.github.zagum.switchicon.sample.databinding.ActivitySampleBinding
 
 class SampleActivity : Activity() {
+    private lateinit var binding: ActivitySampleBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sample)
-        button1.setOnClickListener { switchIconView1.switchState() }
-        button2.setOnClickListener { switchIconView2.switchState() }
-        button3.setOnClickListener { switchIconView3.switchState() }
+        binding = ActivitySampleBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        binding.button1
+            .setOnClickListener { binding.switchIconView1.switchState() }
+        binding.button2
+            .setOnClickListener { binding.switchIconView2.switchState() }
+        binding.button3
+            .setOnClickListener { binding.switchIconView3.switchState() }
     }
 }

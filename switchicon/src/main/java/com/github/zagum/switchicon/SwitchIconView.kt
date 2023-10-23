@@ -151,6 +151,7 @@ class SwitchIconView @JvmOverloads constructor(context: Context, attrs: Attribut
         updateClipPath()
     }
 
+    @Suppress("DEPRECATION")
     override fun onDraw(canvas: Canvas) {
         if (!noDash) {
             drawDash(canvas)
@@ -225,6 +226,7 @@ class SwitchIconView @JvmOverloads constructor(context: Context, attrs: Attribut
         setColorFilter(colorFilter)
     }
 
+    @Suppress("DEPRECATION")
     private fun updateImageAlpha(alpha: Int) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             imageAlpha = alpha
@@ -245,7 +247,7 @@ class SwitchIconView @JvmOverloads constructor(context: Context, attrs: Attribut
     internal class SwitchIconSavedState : BaseSavedState {
         var iconEnabled: Boolean = false
 
-        constructor(superState: Parcelable) : super(superState) {}
+        constructor(superState: Parcelable?) : super(superState) {}
 
         private constructor(parcel: Parcel) : super(parcel) {
             val enabled = parcel.readInt()
