@@ -7,11 +7,20 @@ dependencies {
 }
 
 android {
+    namespace 'com.github.zagum.switchicon'
+
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
+    }
+    compileOptions {
+        sourceCompatibility 17
+        targetCompatibility 17
+    }
+    buildFeatures {
+        buildConfig = true
     }
 }
 repositories {
