@@ -8,6 +8,8 @@ dependencies {
 }
 
 android {
+    namespace 'com.github.zagum.switchicon.sample'
+
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -21,11 +23,12 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility 17
+        targetCompatibility 17
     }
     buildFeatures {
         viewBinding true
+        buildConfig = true
     }
 }
 repositories {
